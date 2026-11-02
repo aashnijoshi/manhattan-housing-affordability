@@ -42,6 +42,23 @@ The current cleaned ACS output is:
 data/processed/manhattan_acs_income_by_tract.csv
 ```
 
+In 02_pluto_analysis.ipynb, we have:
+
+- Loaded the NYC PLUTO 26v2 dataset directly from its compressed ZIP file.
+- Filtered the dataset to Manhattan.
+- Checked for duplicate tax-lot identifiers and missing values.
+- Removed records with missing residential-unit counts.
+- Standardized land-use and construction-period categories.
+- Saved the cleaned Manhattan PLUTO dataset to data/processed/.
+- Generated two preliminary housing-stock visualizations.
+
+The current cleaned PLUTO outputs are:
+
+```text
+data/processed/manhattan_acs_income_by_tract.csv
+data/processed/manhattan_pluto_26v2_cleaned.csv.gz
+```
+
 ## Data
 
 Raw datasets should be stored in:
@@ -60,27 +77,29 @@ The raw files should not be edited manually.
 
 ## Running the Analysis
 
-Install the required packages with:
+Install the required packages from the repository root:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then open:
+Then open the notebooks in the following order:
 
 ```text
 notebooks/01_analysis.ipynb
+notebooks/02_pluto_analysis.ipynb
 ```
 
-and run the notebook from top to bottom.
+Run each notebook from top to bottom using Kernel → Restart & Run All.
 
-All file paths in the project should be relative so the analysis can run on another computer.
+The notebooks should be run with the repository root as the working directory so that relative paths such as data/raw/ and data/processed/ resolve correctly.
 
 ## Main Datasets
 
 The project currently uses:
 
-- NYC 2020 Neighborhood Tabulation Areas
-- 2024 American Community Survey 5-Year Estimates
+- NYC 2020 Neighborhood Tabulation Areas: Geographic boundaries used to define Manhattan neighborhoods.
+- 2024 American Community Survey 5-Year Estimates: Census tract household income and household counts.
+- NYC PLUTO 26v2: Tax-lot-level data describing residential units, land use, building age, and geographic location.
 
-Additional housing datasets will be added as the analysis continues.
+The next stage will incorporate NYC HPD Affordable Housing Production by Building data.

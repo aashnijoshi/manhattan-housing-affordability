@@ -1,0 +1,8 @@
+step,records_affected,reason
+Filter non-Manhattan lots,815780,Restrict the study to Manhattan
+Duplicate BBL inspection,0,Check for duplicate tax-lot identifiers
+Exclude missing unitsres,63,Unknown residential-unit counts are not zero
+Retain zero-unit parcels,9969,Nonresidential tax lots are valid records
+Missing coordinates retained,394,Exclude only when performing spatial joins
+Invalid or missing construction year,2379,Classify as Unknown instead of removing
+Missing land-use classification,102,Classify as Unclassified
