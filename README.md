@@ -52,7 +52,7 @@ In 02_pluto_analysis.ipynb, we have:
 - Saved the cleaned Manhattan PLUTO dataset to data/processed/.
 - Generated two preliminary housing-stock visualizations.
 
-The current cleaned outputs are:
+The current cleaned PLUTO outputs are:
 
 ```text
 data/processed/manhattan_acs_income_by_tract.csv
