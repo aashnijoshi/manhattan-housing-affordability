@@ -1,2 +1,6 @@
 # .gitignore
 nyc_pluto_26v2.csv
+
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
