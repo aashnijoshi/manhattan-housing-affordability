@@ -77,26 +77,22 @@ The raw files should not be edited manually.
 
 ## Running the Analysis
 
-Install the required packages with:
+Install the required packages from the repository root:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then open:
+Then open the notebooks in the following order:
 
 ```text
 notebooks/01_analysis.ipynb
-```
-
-or
-```text
 notebooks/02_pluto_analysis.ipynb
 ```
 
-and run the notebook from top to bottom.
+Run each notebook from top to bottom using Kernel → Restart & Run All.
 
-All file paths in the project should be relative so the analysis can run on another computer.
+The notebooks should be run with the repository root as the working directory so that relative paths such as data/raw/ and data/processed/ resolve correctly.
 
 ## Main Datasets
 
