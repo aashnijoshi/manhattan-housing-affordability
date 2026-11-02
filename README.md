@@ -1,0 +1,1 @@
+Research question: How is the location of affordable housing projects across Manhattan associated with neighborhood household income?
