@@ -42,6 +42,23 @@ The current cleaned ACS output is:
 data/processed/manhattan_acs_income_by_tract.csv
 ```
 
+In 02_pluto_analysis.ipynb, we have:
+
+- Loaded the NYC PLUTO 26v2 dataset directly from its compressed ZIP file.
+- Filtered the dataset to Manhattan.
+- Checked for duplicate tax-lot identifiers and missing values.
+- Removed records with missing residential-unit counts.
+- Standardized land-use and construction-period categories.
+- Saved the cleaned Manhattan PLUTO dataset to data/processed/.
+- Generated two preliminary housing-stock visualizations.
+
+The current cleaned outputs are:
+
+```text
+data/processed/manhattan_acs_income_by_tract.csv
+data/processed/manhattan_pluto_26v2_cleaned.csv.gz
+```
+
 ## Data
 
 Raw datasets should be stored in:
