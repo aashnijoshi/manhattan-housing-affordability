@@ -89,6 +89,11 @@ Then open:
 notebooks/01_analysis.ipynb
 ```
 
+or
+```text
+notebooks/02_pluto_analysis.ipynb
+```
+
 and run the notebook from top to bottom.
 
 All file paths in the project should be relative so the analysis can run on another computer.
