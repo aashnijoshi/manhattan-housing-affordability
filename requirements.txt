@@ -1,5 +1,5 @@
-pandas
-geopandas
-matplotlib
-requests
+pandas>=3.0
+geopandas>=1.2
+pyogrio>=0.13
+matplotlib>=3.11
 jupyter
