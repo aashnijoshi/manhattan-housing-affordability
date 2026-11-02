@@ -3,11 +3,3 @@ geopandas
 matplotlib
 requests
 jupyter
-pandas>=2.2,<3
-numpy>=1.26,<3
-geopandas>=1.0,<2
-shapely>=2.0,<3
-pyproj>=3.6,<4
-pyogrio>=0.9,<1
-matplotlib>=3.8,<4
-jupyterlab>=4,<5
