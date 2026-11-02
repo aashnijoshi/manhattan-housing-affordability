@@ -102,7 +102,8 @@ All file paths in the project should be relative so the analysis can run on anot
 
 The project currently uses:
 
-- NYC 2020 Neighborhood Tabulation Areas
-- 2024 American Community Survey 5-Year Estimates
+- NYC 2020 Neighborhood Tabulation Areas: Geographic boundaries used to define Manhattan neighborhoods.
+- 2024 American Community Survey 5-Year Estimates: Census tract household income and household counts.
+- NYC PLUTO 26v2: Tax-lot-level data describing residential units, land use, building age, and geographic location.
 
-Additional housing datasets will be added as the analysis continues.
+The next stage will incorporate NYC HPD Affordable Housing Production by Building data.
